@@ -7,7 +7,7 @@ $var1 = 10;
 app();
 
 
-function app(): void
+function app()
 {
     // tady je moje aplikacni logika
 
@@ -22,7 +22,7 @@ function app(): void
 }
 
 
-function init($var1): void
+function init($var1)
 {
 
     logger('init');
@@ -44,7 +44,7 @@ function contentIterator(): int
     return $_SESSION['content_iterator'];
 }
 
-function content(): void
+function content()
 {
     // pocet zavolani teto funkce obejdu pres session
     //nebo pres static
@@ -54,13 +54,13 @@ function content(): void
 }
 
 
-function finish(): void
+function finish()
 {
     logger('finish');
 }
 
 
-function logger($message): void
+function logger($message)
 {
 
     echo "logging {$message}  \n";
